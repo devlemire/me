@@ -79,7 +79,7 @@ header {
   }
 }
 
-@media screen and (min-device-width: 400px) {
+@media screen and (min-device-width: 450px) {
   #Header-mobile-menu-btn {
     display: none;
   }
