@@ -2,7 +2,13 @@
 
 SCRIPT_DIR="$(pwd)/$(dirname $0)"
 
+cd $SCRIPT_DIR/../
+
+yarn
+
 cd $SCRIPT_DIR/../public
+
+yarn
 
 yarn build
 
