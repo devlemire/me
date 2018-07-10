@@ -1,10 +1,10 @@
 #!/bin/sh
 
-cd "$(pwd)/$(dirname $0)"/../public
+SCRIPT_DIR="$(pwd)/$(dirname $0)"
+
+cd $SCRIPT_DIR/../public
 
 yarn build
 
-cd "$(pwd)/$(dirname $0)"
-
 forever stop me
-forever start -l me.log -a --uid me "$(pwd)/$(dirname $0)"/../index.js
+forever start -l me.log -a --uid me $SCRIPT_DIR/../index.js
