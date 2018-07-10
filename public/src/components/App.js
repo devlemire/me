@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
 import './App.css'
 import axios from 'axios'
+import router from '../router'
+
+// Components
+import Header from './Header'
 
 class App extends Component {
   componentDidMount = async () => {
@@ -16,15 +19,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-
-        <p>API Response: {this.state.apiResponse}</p>
+        <Header />
+        <section id="page-content">{router}</section>
       </div>
     )
   }
