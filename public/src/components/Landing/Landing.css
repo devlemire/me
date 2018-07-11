@@ -1,0 +1,120 @@
+#Landing-content h1 {
+  margin: 0;
+}
+
+#Landing-content {
+  min-height: 100vh;
+}
+
+.Landing-route-white {
+  width: 100%;
+}
+
+#Landing-about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: column;
+  padding: 16px;
+}
+
+#about-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#about-top h1 {
+  margin-left: 10px;
+}
+
+#about-profile-picture {
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+}
+
+#about-bottom {
+  text-align: left;
+  line-height: 1.9;
+}
+
+.black-container {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 16px 32px;
+  position: relative;
+  z-index: 1;
+  margin: 10% 0px 15% 0px;
+}
+
+.black-container:before {
+  background: inherit;
+  top: 0;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(4.5deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+.black-container:after {
+  background: inherit;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-4.5deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+#Landing-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 64px;
+}
+
+/* #Landing-skills-list .Landing-skill:last-child {
+  margin-right: 0px;
+} */
+
+#Landing-skills h1 {
+  margin: 0px 0px 20px 0px;
+}
+
+.Landing-skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 30px;
+  margin-bottom: 50px;
+  width: 135px;
+}
+
+.Landing-skill img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+  margin-bottom: 6px;
+}
+
+.Landing-skill h2 {
+  margin: 0;
+  font-size: 20px;
+}
