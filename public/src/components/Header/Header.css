@@ -17,7 +17,7 @@ header {
   height: 100vh;
   width: 0px;
   top: 0px;
-  padding: 8px 16px 8px 16px;
+  padding: 16px 32px;
   background-color: var(--black);
   color: var(--white);
   transition: width 500ms;
@@ -34,6 +34,7 @@ header {
 
 #Header-mobile-menu ul li {
   margin-bottom: 8px;
+  font-size: 23px;
 }
 
 #Header-desktop-menu {
@@ -48,14 +49,14 @@ header {
   0% {
     opacity: 0;
     width: 0px;
-    right: -100px;
+    right: -150px;
     left: auto;
     top: 0px;
   }
 
   100% {
     opacity: 1;
-    width: 100px;
+    width: 150px;
     right: 0px;
     left: auto;
     top: 0px;
@@ -64,7 +65,7 @@ header {
 
 @keyframes mobile-menu-close {
   0% {
-    width: 100px;
+    width: 150px;
     right: 0px;
     left: auto;
     top: 0px;
@@ -74,7 +75,7 @@ header {
   100% {
     width: 0px;
     right: auto;
-    left: -100px;
+    left: -150px;
     opacity: 0;
   }
 }
