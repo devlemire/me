@@ -48,7 +48,7 @@
   padding: 16px 32px;
   position: relative;
   z-index: 1;
-  margin: 10% 0px 15% 0px;
+  margin: 10% 0px;
 }
 
 .black-container:before {
@@ -117,4 +117,31 @@
 .Landing-skill h2 {
   margin: 0;
   font-size: 20px;
+}
+
+#Landing-work-experience {
+  padding: 16px;
+}
+
+#Landing-work-experience h1 {
+  text-align: right;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 900px) {
+  #Landing-content {
+    padding: 0px 15%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #Landing-content {
+    padding: 0px 20%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  #Landing-content {
+    padding: 0px 30%;
+  }
 }

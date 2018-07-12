@@ -44,6 +44,10 @@ export default function Landing() {
         <h1>My Skills</h1>
         <div id="Landing-skills-list">{skillsJSX}</div>
       </div>
+
+      <div id="Landing-work-experience">
+        <h1 style={{ textAlign: 'right' }}>My Work Experience</h1>
+      </div>
     </div>
   )
 }
