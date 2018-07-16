@@ -16,6 +16,7 @@ app.get('/api/test', (req, res) => {
 
 app.post('/api/test', (req, res) => {
   console.log({ body: req.body, params: req.params, query: req.query })
+  console.log(req.body['soapenv:Envelope']['soapenv:Body'])
   res.send({ body: req.body, params: req.params, query: req.query })
 })
 
