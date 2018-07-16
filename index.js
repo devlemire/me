@@ -40,6 +40,7 @@ app.post('/api/test', (req, res) => {
     ]
   }
 
+  res.set('Content-Type', 'text/xml')
   res.send(xml(js))
 })
 
