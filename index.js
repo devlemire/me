@@ -1,13 +1,20 @@
 require('dotenv').config({ path: __dirname + '/.env' })
 const express = require('express')
 const path = require('path')
+const bodyParser = require('body-parser')
 
 const { NODE_ENV, SERVER_PORT } = process.env
 
 const app = express()
 
+app.use(bodyParser.json())
+
 app.get('/api/test', (req, res) => {
   res.send('yaba daba dooo!')
+})
+
+app.post('/api/test', (req, res) => {
+  res.send({ body: req.body, params: req.params, query: req.query })
 })
 
 // Serve front end files
