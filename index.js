@@ -3,9 +3,13 @@ const express = require('express')
 const path = require('path')
 const bodyParser = require('body-parser')
 const util = require('util')
+const xml = require('xml')
 require('body-parser-xml')(bodyParser)
 
 const { NODE_ENV, SERVER_PORT } = process.env
+
+// enrollment, application, contact
+// if they change email
 
 const app = express()
 
@@ -21,7 +25,22 @@ app.post('/api/test', (req, res) => {
     util.inspect(req.body['soapenv:Envelope']['soapenv:Body'], false, null)
   )
 
-  res.send({ body: req.body, params: req.params, query: req.query })
+  var js = {
+    element: [
+      { _attr: { name: 'notificationsResponse' } },
+      {
+        complexType: [
+          {
+            sequence: [
+              { element: [{ _attr: { name: 'Ack', type: 'xsd:boolean' } }] }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+
+  res.send(js)
 })
 
 // Serve front end files
