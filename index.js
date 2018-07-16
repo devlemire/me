@@ -40,7 +40,7 @@ app.post('/api/test', (req, res) => {
     ]
   }
 
-  res.send(js)
+  res.send(xml(js))
 })
 
 // Serve front end files
