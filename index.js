@@ -2,6 +2,7 @@ require('dotenv').config({ path: __dirname + '/.env' })
 const express = require('express')
 const path = require('path')
 const bodyParser = require('body-parser')
+const util = require('util')
 require('body-parser-xml')(bodyParser)
 
 const { NODE_ENV, SERVER_PORT } = process.env
