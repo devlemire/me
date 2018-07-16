@@ -6,13 +6,9 @@
   "author": "= <webdev.jameslemire@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "body-parser-xml": "^1.1.0",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
-    "path": "^0.12.7",
-    "xml": "^1.0.1",
-    "xml2js": "^0.4.19"
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "nodemon": "^1.18.0"
