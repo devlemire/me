@@ -10,6 +10,10 @@ app.get('/api/test', (req, res) => {
   res.send('yaba daba dooo!')
 })
 
+app.post('/api/test', (req, res) => {
+  console.log('Still getting hit')
+})
+
 // Serve front end files
 app.use(express.static(`${__dirname}/public/build`))
 app.get('*', (req, res) => {
