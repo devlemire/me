@@ -20,8 +20,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(`${__dirname}/public/build/index.html`))
 })
 
-console.log(`Server NODE_ENV is set to: ${NODE_ENV}`)
-
-app.listen(SERVER_PORT, () =>
+app.listen(SERVER_PORT, () => {
   console.log(`Server listening on port ${SERVER_PORT}.`)
-)
+  console.log(`Server NODE_ENV is set to: ${NODE_ENV}`)
+})
