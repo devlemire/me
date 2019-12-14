@@ -15,7 +15,7 @@
     "nodemon": "^2.0.2"
   },
   "scripts": {
-    "dev": "nodemon"
+    "start": "nodemon"
   },
   "nodemonConfig": {
     "ignore": [
